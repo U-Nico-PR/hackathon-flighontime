@@ -29,4 +29,12 @@ public class AeropuertoService {
         }
     }
 
+    public boolean existsByIata(String iata) {
+        return repository.existsByIata(iata);
+    }
+
+    public Aeropuerto findByIata(String iata) {
+        return repository.findByIata(iata);
+    }
+
 }

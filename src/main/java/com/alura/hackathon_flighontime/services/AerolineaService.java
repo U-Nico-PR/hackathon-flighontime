@@ -28,4 +28,12 @@ public class AerolineaService {
         }
     }
 
+    public boolean existByIata(String iata) {
+        return repository.existsByIata(iata);
+    }
+
+    public Aerolinea fineByIata(String iata) {
+        return repository.findByIata(iata);
+    }
+
 }
