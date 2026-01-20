@@ -1,6 +1,5 @@
 package com.alura.hackathon_flighontime.models;
 
-import com.alura.hackathon_flighontime.dtos.FlightPredictionRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -74,6 +73,7 @@ public class Vuelo {
         return kmAMillas(Math.round(radioTierra * c));
     }
 
+    // Método para pasar de Km a Millas
     private int kmAMillas(double km) {
         // 1 Kilometro = 0.621371 millas
         return (int) (km * 0.621371);

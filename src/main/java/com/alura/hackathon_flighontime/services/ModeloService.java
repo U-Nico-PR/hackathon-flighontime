@@ -7,9 +7,9 @@ import com.alura.hackathon_flighontime.exceptions.ValidarException;
 import com.alura.hackathon_flighontime.models.Aerolinea;
 import com.alura.hackathon_flighontime.models.Aeropuerto;
 import com.alura.hackathon_flighontime.models.Vuelo;
-import com.alura.hackathon_flighontime.services.aux.ConsumoAPI;
-import com.alura.hackathon_flighontime.services.aux.ConvertirDatos;
-import com.alura.hackathon_flighontime.services.aux.IConvertirDatos;
+import com.alura.hackathon_flighontime.services.consumo.ConsumoAPI;
+import com.alura.hackathon_flighontime.services.consumo.ConvertirDatos;
+import com.alura.hackathon_flighontime.services.consumo.IConvertirDatos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,9 +32,9 @@ public class ModeloService {
 
     public FlightPredictionResponseDTO enviarRequest(FlightPredictionRequestDTO requestDTO) {
 
-        String iata_aerolinea = requestDTO.airline_code();
+        String iata_aerolinea = requestDTO.aerolinea();
         String iata_origen = requestDTO.origen();
-        String iata_destino = requestDTO.dest();
+        String iata_destino = requestDTO.destino();
 
         if(iata_origen.equalsIgnoreCase(iata_destino)){
             throw new ValidarException("Origen y Destino deben ser diferentes.");

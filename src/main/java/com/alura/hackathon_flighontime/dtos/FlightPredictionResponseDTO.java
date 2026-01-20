@@ -1,7 +1,6 @@
 package com.alura.hackathon_flighontime.dtos;
 import com.alura.hackathon_flighontime.models.enums.PrevisionVuelo;
 import com.fasterxml.jackson.annotation.JsonAlias;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.*;
 
 // Data Transfer Object para la respuesta a la predicción.

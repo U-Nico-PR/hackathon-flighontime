@@ -1,4 +1,4 @@
-package com.alura.hackathon_flighontime.services.aux;
+package com.alura.hackathon_flighontime.services.consumo;
 
 import java.io.IOException;
 import java.net.URI;
