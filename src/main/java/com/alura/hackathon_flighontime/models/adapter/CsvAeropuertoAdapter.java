@@ -16,7 +16,8 @@ public class CsvAeropuertoAdapter implements IAdapter<Aeropuerto>{
         Reader reader = new InputStreamReader(inputStream);
         ColumnPositionMappingStrategy<Aeropuerto> strategy = new ColumnPositionMappingStrategy<>();
         strategy.setType(Aeropuerto.class);
-        strategy.setColumnMapping("nombre", "iata");
+        // Los atributos de la clase deben de estar ordenados como el archivo csv.
+        strategy.setColumnMapping("latitud", "longitud", "iata", "nombre");
 
         CsvToBean<Aeropuerto> csvToBean = new CsvToBeanBuilder<Aeropuerto>(reader)
                 .withMappingStrategy(strategy)

@@ -17,13 +17,14 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RestController
 public class PredictionController {
 
+    @Autowired
+    private ModeloService modeloService;
+
     @PostMapping("/predict")
     public ResponseEntity prueba(@RequestBody @Valid FlightPredictionRequestDTO requestDTO) {
-        Vuelo vuelo = new Vuelo(requestDTO);
-        vuelo.setDistancia(1112);
+        FlightPredictionResponseDTO responseDTO = modeloService.enviarRequest(requestDTO);
 
         // var uri = uriComponentsBuilder.path("/predict").toUri();
-        FlightPredictionResponseDTO responseDTO = ModeloService.enviarRequest(vuelo);
 
         return ResponseEntity.ok(responseDTO);
     }

@@ -7,6 +7,7 @@ import lombok.*;
 @Table(name = "aerolineas")
 @Setter
 @Getter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")

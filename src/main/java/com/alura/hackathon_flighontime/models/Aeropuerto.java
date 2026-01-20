@@ -7,6 +7,7 @@ import lombok.*;
 @Table(name = "aeropuertos")
 @Setter
 @Getter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -19,4 +20,8 @@ public class Aeropuerto {
     private String nombre;
 
     private String iata;
+
+    private double latitud;
+
+    private double longitud;
 }
