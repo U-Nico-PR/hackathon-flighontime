@@ -4,8 +4,6 @@ import com.alura.hackathon_flighontime.models.Aerolinea;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
-
 public interface IAerolineaRepository extends JpaRepository<Aerolinea, Long> {
 
     boolean existsByIata(@NotBlank String iata);

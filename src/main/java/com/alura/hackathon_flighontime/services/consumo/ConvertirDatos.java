@@ -1,4 +1,4 @@
-package com.alura.hackathon_flighontime.services.aux;
+package com.alura.hackathon_flighontime.services.consumo;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

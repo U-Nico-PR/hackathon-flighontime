@@ -1,6 +1,5 @@
 package com.alura.hackathon_flighontime.services;
 
-import com.alura.hackathon_flighontime.models.Aerolinea;
 import com.alura.hackathon_flighontime.models.Aeropuerto;
 import com.alura.hackathon_flighontime.models.adapter.AdapterFile;
 import com.alura.hackathon_flighontime.models.adapter.IAdapter;
