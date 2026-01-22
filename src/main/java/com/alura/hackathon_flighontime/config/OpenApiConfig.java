@@ -15,10 +15,10 @@ public class OpenApiConfig {
                         .title("FlightOnTime")
                         .version("1.0.0")
                         .description("FlightOnTime es un proyecto de Data Science con Back-End cuyo objetivo es predecir si un vuelo será Puntula o Retrasado, " +
-                                "junto con la probabilidad asociada a dicha predicción.\n" +
-                                "\n" +
-                                "La solución se base en un modelo de Machine Learning entrenado con datos históricos de vuelos y expuesto a través de una API REST " +
-                                "desarrollada en Java con Spring Boot, permitiendo la consulta de predicciones.")
+                        "junto con la probabilidad asociada a dicha predicción.\n" +
+                        "\n" +
+                        "La solución se base en un modelo de Machine Learning entrenado con datos históricos de vuelos y expuesto a través de una API REST " +
+                        "desarrollada en Java con Spring Boot, permitiendo la consulta de predicciones.")
                 );
     }
 

@@ -78,4 +78,43 @@ public class Vuelo {
         // 1 Kilometro = 0.621371 millas
         return (int) (km * 0.621371);
     }
+
+    //Getters
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public Aerolinea getAerolinea() {
+        return aerolinea;
+    }
+
+    public Aeropuerto getOrigen() {
+        return origen;
+    }
+
+    public Aeropuerto getDestino() {
+        return destino;
+    }
+
+    public int getHora_partida() {
+        return hora_partida;
+    }
+
+    public int getDia_semana() {
+        return dia_semana;
+    }
+
+    public int getDistancia() {
+        return distancia;
+    }
+
+    public int getEs_hora_pico() {
+        return es_hora_pico;
+    }
+
+    public List<Prediction> getPredictiones() {
+        return predictiones;
+    }
 }

@@ -19,7 +19,7 @@ public class PredictionController {
     @Autowired
     private ModeloService modeloService;
 
-    @Operation(
+   @Operation(
             summary = "Genera la predicción de un vuelo",
             description = "Retorna información predictiva basada en los datos del vuelo"
     )
