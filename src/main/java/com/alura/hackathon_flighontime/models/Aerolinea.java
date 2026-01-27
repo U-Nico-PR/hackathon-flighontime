@@ -21,4 +21,29 @@ public class Aerolinea {
 
     private String iata;
 
+    //Getter y Setter
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getIata() {
+        return iata;
+    }
+
+    public void setIata(String iata) {
+        this.iata = iata;
+    }
 }
